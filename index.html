@@ -3,11 +3,96 @@
 <html lang="en">
 
 <head>
-    <title>xhotel</title>
+  <meta charset="UTF-8">
+  <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0, user-scalable=no" name="viewport">
+  <meta content="yes" name="apple-mobile-web-app-capable">
+  <meta content="black" name="apple-mobile-web-app-status-bar-style">
+  <meta content="telephone=no" name="format-detection">
+  <meta content="email=no" name="format-detection">
+  <title>Xhotel智慧酒店</title>
 </head>
 
 <body>
-  <h1>hello xhotel</h1>
+  <div class="wapper">
+       <div><img src="images/pic_01.jpg" /></div>
+       <div><img src="images/pic_02.jpg" /></div>
+       <img src="images/pic_03.jpg" />
+       <img src="images/pic_04.jpg" />
+       <img src="images/pic_05.jpg" />
+       <img src="images/pic_06.jpg" />
+       <img src="images/pic_07.jpg" />
+       <img src="images/pic_08.jpg" />
+       <img src="images/pic_09.jpg" />
+       <img id="cont1" src="images/cont1.png" />
+       <img id="cont2" style="display:none" src="images/cont2.png" />
+       <img id="cont3"  style="display:none" src="images/cont3.png" />
+       <img id="cont4"  style="display:none" src="images/cont4.png" />
+       <div class="imgbox">
+         <img id="btn1" src="images/img1.png" />
+         <img id="btn2" src="images/img2.png" />
+         <img id="btn3" src="images/img3.png" />
+         <img id="btn4" src="images/img4.png" />
+       </div>
+       <img src="images/pic_12.jpg" />
+       <img src="images/pic_13.jpg" />
+       <div class="hotelphone">
+         <img src="images/pic_14.png">
+         <p style="top: 50px;">拨打186-7277-7718</p>
+         <p style="top: 90px;">现在就加入 xhotel腾讯云智慧酒店</p>
+       </div>
+       <img src="images/pic_15.jpg" />
+       <img src="images/pic_16.jpg" />
+       <img src="images/pic_17.jpg" />
+   </div>
+
+<!-- 样式表引入 -->
+<style>
+  body{margin: 0;padding: ;}
+  .wapper{width: 100%;margin: 0;padding: 0;}
+.wapper img{width: 100%;margin: 0;padding: 0;display: block;  text-align: center;
+   font-size: 0px;}
+.hotelphone{width: 100%;position: relative;}
+.hotelphone img{width: 100%;position: absolute;}
+.hotelphone p{text-align: center;font-size: 24px;color: #fff;position: absolute;display: block;width: 100%;}
+.imgbox{width: 100%;background: #000;}
+.imgbox img{width: 25%;display: block;float: left;background: #000;margin: 0;padding: 0;font-size: 0;text-align: center;}
+</style>
+<!-- end样式表引入 -->
+<script type="text/javascript">
+   var btn1 = document.getElementById("btn1");
+   var btn2 = document.getElementById("btn2");
+   var btn3 = document.getElementById("btn3");
+   var btn4 = document.getElementById("btn4");
+   var cont1 = document.getElementById("cont1");
+   var cont2 = document.getElementById("cont2");
+   var cont3 = document.getElementById("cont3");
+   var cont4 = document.getElementById("cont4");
+
+   btn1.onclick = function(){
+    cont1.style="display:block";
+    cont2.style="display:none";
+    cont3.style="display:none";
+    cont4.style="display:none";
+   }
+   btn2.onclick = function(){
+    cont2.style="display:block";
+    cont1.style="display:none";
+    cont3.style="display:none";
+    cont4.style="display:none";
+   }
+   btn3.onclick = function(){
+    cont3.style="display:block";
+    cont1.style="display:none";
+    cont2.style="display:none";
+    cont4.style="display:none";
+   }
+   btn4.onclick = function(){
+    cont4.style="display:block";
+    cont1.style="display:none";
+    cont2.style="display:none";
+    cont3.style="display:none";
+   }
+</script>
 </body>
 
 </html>
